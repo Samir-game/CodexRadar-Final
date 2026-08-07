@@ -1,0 +1,159 @@
+.home-container {
+  margin-top: 100px;
+  padding-top: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  max-width: 1300px;
+  margin: 100px auto 40px;
+  padding: 40px 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  animation: home-fadeIn 0.5s ease-in-out;
+}
+
+/* Profile Header */
+.home-profile-header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.home-profile-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home-profile-info {
+  flex: 1;
+  min-width: 240px;
+}
+
+.home-user-name {
+  font-size: 28px;
+  color: #003c80;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.home-user-email,
+.home-last-synced {
+  font-size: 16px;
+  color: #374151;
+}
+
+/* Stats Layout */
+.home-stats-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.home-stat-card {
+  flex: 1 1 calc(33% - 16px);
+  min-width: 260px;
+  max-width: 400px;
+  background-color: #f9fafb;
+  padding: 30px 24px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.home-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.home-label {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.home-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.home-loading-text {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 18px;
+  color: #6b7280;
+}
+
+/* Animation */
+@keyframes home-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-stat-card {
+    flex: 1 1 calc(50% - 16px);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 100px 20px 40px;
+    margin: 100px 10px 40px;
+  }
+
+  .home-profile-photo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .home-user-name {
+    font-size: 24px;
+  }
+
+  .home-stat-card {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding-top: 130px;
+  }
+
+  .home-profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-profile-info {
+    width: 100%;
+  }
+
+  .home-user-name {
+    font-size: 22px;
+  }
+
+  .home-user-email,
+  .home-last-synced {
+    font-size: 14px;
+  }
+
+  .home-stat-card {
+    padding: 20px;
+  }
+}

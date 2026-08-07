@@ -1,0 +1,144 @@
+.setting-container {
+  margin-top: 100px;
+  padding-top: 80px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 100px auto 40px;
+  background-color: #ffffff;
+  padding: 40px 35px;
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+  animation: setting-fadeIn 0.5s ease-in-out;
+  color: #1f2937;
+}
+
+.setting-title {
+  font-size: 28px;
+  color: #003c80;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.setting-section {
+  margin-bottom: 30px;
+}
+
+.setting-subheading {
+  font-size: 20px;
+  color: #005cc5;
+  margin-bottom: 10px;
+}
+
+.setting-description {
+  font-size: 15px;
+  color: #374151;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.setting-logout-btn,
+.setting-delete-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.setting-logout-btn {
+  background: linear-gradient(to right, #005cc5, #004899);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 92, 197, 0.3);
+}
+
+.setting-logout-btn:hover {
+  background: linear-gradient(to right, #004899, #003c80);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 76, 160, 0.4);
+}
+
+.setting-delete-btn {
+  background-color: #e11d48;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(225, 29, 72, 0.25);
+}
+
+.setting-delete-btn:hover {
+  background-color: #be123c;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(190, 18, 60, 0.35);
+}
+
+.setting-divider {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+@keyframes setting-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .setting-container {
+    padding: 28px 20px;
+    margin: 90px 16px 40px;
+    border-radius: 16px;
+  }
+
+  .setting-title {
+    font-size: 24px;
+  }
+
+  .setting-subheading {
+    font-size: 18px;
+  }
+
+  .setting-description {
+    font-size: 14px;
+  }
+
+  .setting-logout-btn,
+  .setting-delete-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .setting-container {
+    padding: 24px 14px;
+    margin: 90px 10px 40px;
+    border-radius: 12px;
+  }
+
+  .setting-title {
+    font-size: 22px;
+  }
+
+  .setting-subheading {
+    font-size: 17px;
+  }
+
+  .setting-description {
+    font-size: 13.5px;
+  }
+
+  .setting-logout-btn,
+  .setting-delete-btn {
+    font-size: 13.5px;
+  }
+}

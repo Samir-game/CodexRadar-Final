@@ -1,0 +1,31 @@
+.rb-graph-card {
+  width: 100%;
+  padding: 30px 40px;
+  background-color: #f3f4f6;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
+
+.rb-graph-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003c80;
+}
+
+.rb-no-data {
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .rb-graph-card {
+    padding: 20px;
+  }
+
+  .rb-graph-title {
+    font-size: 18px;
+  }
+}

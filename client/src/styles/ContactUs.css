@@ -1,0 +1,90 @@
+.contactus-container {
+  margin-top: 80px;
+  padding-top: 80px;
+  min-height: 50vh;
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 100px auto 40px;
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  animation: contactus-fadeIn 0.4s ease-in-out;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+.contactus-title {
+  font-size: 28px;
+  color: #003c80;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.contactus-message {
+  font-size: 16px;
+  color: #374151;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contactus-details {
+  font-size: 16px;
+}
+
+.contactus-detail-item {
+  margin: 10px 0;
+  color: #374151;
+}
+
+/* Fade In Animation */
+@keyframes contactus-fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactus-container {
+    padding: 28px 20px;
+    border-radius: 12px;
+    margin: 90px 16px 40px;
+  }
+
+  .contactus-title {
+    font-size: 22px;
+  }
+
+  .contactus-details {
+    font-size: 14.5px;
+  }
+
+  .contactus-detail-item {
+    margin: 8px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus-container {
+    padding: 24px 14px;
+    margin: 90px 10px 40px;
+  }
+
+  .contactus-title {
+    font-size: 20px;
+  }
+
+  .contactus-details {
+    font-size: 13.5px;
+  }
+
+  .contactus-detail-item {
+    margin: 6px 0;
+  }
+}

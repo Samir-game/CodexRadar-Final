@@ -1,0 +1,102 @@
+.coach-container {
+    max-width: 1100px;
+    margin: 100px auto 40px;
+    padding: 32px;
+    color: #1f2937;
+}
+
+.coach-hero {
+    padding: 42px;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(135deg, #003c80, #2563eb);
+    box-shadow: 0 15px 32px rgba(0, 60, 128, .24);
+}
+
+.coach-hero h1 {
+    margin: 8px 0 12px;
+    font-size: clamp(28px, 4vw, 42px);
+}
+
+.coach-hero p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.coach-eyebrow {
+    font-size: 12px !important;
+    font-weight: 800;
+    letter-spacing: .14em;
+    opacity: .85;
+}
+
+.coach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 24px;
+}
+
+.coach-card,
+.coach-plan {
+    background: #fff;
+    padding: 28px;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .07);
+}
+
+.coach-card h2,
+.coach-plan h2 {
+    margin-top: 0;
+    color: #003c80;
+}
+
+.coach-card li,
+.coach-plan li {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.coach-plan {
+    margin-top: 22px;
+}
+
+.coach-next {
+    margin-top: 22px;
+    padding: 22px 26px;
+    border-radius: 14px;
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    line-height: 1.6;
+}
+
+.coach-note,
+.coach-message {
+    max-width: 1100px;
+    margin: 22px auto;
+    padding: 0 32px;
+    color: #6b7280;
+    text-align: center;
+}
+
+.coach-note code {
+    background: #e5e7eb;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+@media (max-width: 700px) {
+    .coach-container {
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .coach-hero {
+        padding: 28px 24px;
+    }
+
+    .coach-grid {
+        grid-template-columns: 1fr;
+    }
+}

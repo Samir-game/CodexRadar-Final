@@ -1,0 +1,65 @@
+.contesthistory-container {
+  max-width: 1000px;
+  margin: 100px auto 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contesthistory-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #003c80;
+  margin-bottom: 30px;
+}
+
+.contest-history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.table-wrapper,
+.graph-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+.table-wrapper::-webkit-scrollbar,
+.graph-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb,
+.graph-wrapper::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 10px;
+}
+
+.contest-loading-text {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 18px;
+  color: #374151;
+}
+
+/* Mobile view fix */
+@media (max-width: 768px) {
+  .table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    max-width: 430px;
+  }
+
+  .ct-table {
+    min-width: 600px;
+  }
+}
